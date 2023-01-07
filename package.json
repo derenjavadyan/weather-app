@@ -6,10 +6,13 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "server": "http-server -p 8080 -c-l dist/wearher-app"
   },
   "private": true,
   "dependencies": {
+    "@angular-devkit/core": "^15.0.5",
+    "@angular-devkit/schematics": "^15.0.5",
     "@angular/animations": "~13.3.0",
     "@angular/cdk": "^13.3.9",
     "@angular/common": "~13.3.0",
@@ -20,6 +23,8 @@
     "@angular/platform-browser": "~13.3.0",
     "@angular/platform-browser-dynamic": "~13.3.0",
     "@angular/router": "~13.3.0",
+    "@angular/service-worker": "~13.3.0",
+    "@schematics/angular": "^15.0.5",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
@@ -30,6 +35,7 @@
     "@angular/compiler-cli": "~13.3.0",
     "@types/jasmine": "~3.10.0",
     "@types/node": "^12.11.1",
+    "http-server": "^14.1.1",
     "jasmine-core": "~4.0.0",
     "karma": "~6.3.0",
     "karma-chrome-launcher": "~3.1.0",
